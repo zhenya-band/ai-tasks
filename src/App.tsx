@@ -1,6 +1,7 @@
 import { PricingPageGemini } from "./tasks/task1";
 import { PricingCardCursor } from "./tasks/task1/PricingCardCursor";
 import { MenuCursor } from "./tasks/task2/MenuCursor";
+import Dashboard from "./tasks/task3/Dashboard";
 
 function App() {
   return (
@@ -41,7 +42,10 @@ function App() {
         <h1 className="text-3xl font-bold text-white mb-10">Pricing Gemini</h1>
         <PricingPageGemini />
       </div>
+      <div className="w-full bg-amber-300 h-2 m-10" />
       <MenuCursor />
+      <div className="w-full bg-amber-300 h-2 m-10" />
+      <Dashboard />
     </>
   );
 }
