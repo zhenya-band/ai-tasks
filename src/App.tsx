@@ -1,3 +1,4 @@
+import { PricingPageGemini } from "./tasks/task1";
 import { PricingCardCursor } from "./tasks/task1/PricingCardCursor";
 
 
@@ -36,6 +37,8 @@ function App() {
         />
       </div>
       <div className="w-full bg-amber-300 h-2 m-10" />
+      <h1 className="text-3xl font-bold text-white mb-10">Pricing Gemini</h1>
+      <PricingPageGemini />
     </div>
   );
 }
