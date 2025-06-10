@@ -2,6 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
+}
+
+.nav li {
+    color:red
 }
 
 .menu {
@@ -9,7 +14,7 @@
   gap: 2rem;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
   .menu {
     flex-direction: column;
     position: absolute;
@@ -17,10 +22,14 @@
     left: 0;
     width: 100%;
     background: #fff;
-    transform: translateY(-150%);
-    transition: 0.3s ease;
+    transform: translateY(-200px);
+    transition: transform 0.3s ease;
+    visibility: hidden;
+    opacity: 0;
   }
   .menu.open {
     transform: translateY(0);
+    visibility: visible;
+    opacity: 1;
   }
 }
